@@ -1,0 +1,9 @@
+{
+	"name": "databricks-pedro-alura",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8a57b6af-7961-45ac-9700-9b0184cb21ed",
+		"tenantId": "01d328a3-c1b5-4599-954c-0be1292fe001"
+	}
+}

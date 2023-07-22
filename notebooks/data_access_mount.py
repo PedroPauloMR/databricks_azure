@@ -7,9 +7,9 @@ dbutils.fs.ls('/mnt/dados/')
 
 # COMMAND ----------
 
-CLIENT_ID_STORAGE = '7f850b1e-8984-49cf-86bf-b42992ad6343'
-TENANT_ID_STORAGE = '01d328a3-c1b5-4599-954c-0be1292fe001'
-SECRET_VALUE = '1Zy8Q~6Pb2NLR2i6a9ka9K2afNZ93~oAp4Rx4cjH'
+CLIENT_ID_STORAGE = ''
+TENANT_ID_STORAGE = ''
+SECRET_VALUE = ''
 
 # COMMAND ----------
 
@@ -22,8 +22,8 @@ configs = {"fs.azure.account.auth.type": "OAuth",
 
 # Optionally, you can add <directory-name> to the source URI of your mount point.
 dbutils.fs.mount(
-  source = "abfss://imoveis@datalakealurapedro.dfs.core.windows.net/",
-  mount_point = "/mnt/dados",
+  source = "abfss://<name_container>@<application-registration>.dfs.core.windows.net/",
+  mount_point = "<mount_created>",
   extra_configs = configs)
 
 # COMMAND ----------
